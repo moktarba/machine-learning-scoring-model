@@ -8,7 +8,7 @@ import pandas as pd
 import joblib
 # 2. Create app and model objects
 app = FastAPI()
-#model = CreditModel()
+
 df = pd.read_csv('data.csv')
 model_fname_ = 'random_model.pkl'
 model = joblib.load(model_fname_)
@@ -27,7 +27,7 @@ def predict_credit(credit: CreditModel):
         prediction = "Solvable"
         probability = preds[0][0]
     else:
-        prediction = " Non Solvable"
+        prediction = "Non Solvable"
         probability = preds[0][1]
 
     #prediction, probability = model.predict(data)
