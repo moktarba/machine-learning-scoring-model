@@ -4,3 +4,4 @@ gunicorn
 #django-heroku
 pandas
 joblib
+sklearn
