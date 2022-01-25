@@ -1,7 +1,6 @@
-fastapi
-#django
 gunicorn
 #django-heroku
 pandas
 joblib
 sklearn
+fastapi
