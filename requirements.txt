@@ -1,0 +1,6 @@
+fastapi
+#django
+gunicorn
+#django-heroku
+pandas
+joblib
