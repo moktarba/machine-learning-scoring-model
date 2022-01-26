@@ -1,4 +1,5 @@
 gunicorn
+uvicorn
 #django-heroku
 pandas
 joblib
