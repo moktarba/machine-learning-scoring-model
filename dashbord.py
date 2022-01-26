@@ -5,6 +5,9 @@ import requests
 import joblib
 import lime
 import streamlit.components.v1 as components
+import matplotlib.pyplot as plt
+from IPython.display import HTML
+
 
 data = pd.read_csv("./data.csv")
 interpretability = joblib.load("interpretability.pkl")
@@ -38,7 +41,7 @@ if choice != None :
         probability = response["probability"]
         st.write('Le client est : '+prediction+" avec une probabilté de "+str(probability)[:4]);
 
-        affiche_interpretability =  st.button("Afficher Interprétabilté")
-        if affiche_interpretability :
-            inter = interpretability[int(choice)]
-            components.html(inter.as_html(), height=800)
+    affiche_interpretability =  st.button("Afficher Interprétabilté")
+    if affiche_interpretability :
+        inter = interpretability[int(choice)]
+        components.html(inter.as_html(), height=800)
