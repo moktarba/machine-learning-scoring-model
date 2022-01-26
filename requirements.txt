@@ -4,3 +4,8 @@ pandas
 joblib
 sklearn
 fastapi
+pandas
+streamlit
+requests
+lime
+matplotlib
