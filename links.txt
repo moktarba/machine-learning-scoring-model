@@ -3,3 +3,6 @@ https://github.com/moktarba/machine-learning-scoring-model
 
 api heroku :
 https://stormy-sea-37688.herokuapp.com/
+
+dashboard  streamlit : 
+https://share.streamlit.io/moktarba/machine-learning-scoring-model/main/dashbord.py
