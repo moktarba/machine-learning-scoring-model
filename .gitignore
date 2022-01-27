@@ -2,4 +2,6 @@ files/
 only_application_pred.csv
 .ipynb_checkpoints/
 __pycache__/
-
+interpretability.pkl
+notebook_modelisation.ipynb
+requirements1.txt
