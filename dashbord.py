@@ -12,7 +12,8 @@ from IPython.display import HTML
 data = pd.read_csv("./data.csv")
 interpretability = joblib.load("interpretability.pkl")
 list_index = list(data.index)
-FAST_URI = "http://localhost:8000/predict"
+# FAST_URI = "http://localhost:8000/predict"
+FAST_URI = "https://stormy-sea-37688.herokuapp.com//predict"
 
 def request_prediction(model_uri, data):
     headers = {"Content-Type": "application/json"}
